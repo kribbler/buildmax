@@ -1,0 +1,23 @@
+*** Payment Express (PxPay) Changelog ***
+
+2013.08.08 - Version 1.6
+ * Re-applied changes that were lost when WooCommerce reverted the plugin back to Version 1.2
+ * Fixed 64-character DPS "Merchant Reference" bug
+ * Removed "Access URL" field from Admin Settings page
+ * Added "Merchant Reference" field to Admin Settings page
+
+2013.06.21 - version 1.5
+ *Addressed issues with newer versions of Wordpress.
+
+2013.04.10 - version 1.3
+ * Now supports Woocommerce 2.0.
+
+2013.02.12 - version 1.2
+ * Invoice number now posted to Payment Express.
+ * Small visual improvements.
+
+2012.12.05 - version 1.1.1
+ * Updater
+
+2012.02.09 - version 1.0
+ * First Release

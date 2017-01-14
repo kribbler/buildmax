@@ -1,0 +1,133 @@
+**** WooCommerce Email Inquiry Ultimate Changelog ****
+
+= 1.0.9 - 2014/01/25 = 
+* Feature - Upgraded for 100% compatibility with WooCommerce Version 2.1 with backward compatibility to Version 2.0
+* Feature - Added all required code so plugin can work with WooCommerce Version 2.1 refactored code.
+* Tweak - Replaced pretty URL custom flush_rules() function to endpoints for open form on new page for WooCommerce version 2.1 users.
+* Tweak - Changed Custom form pop-up background from get_site_background to #FFFFFF background colour.
+* Tweak - Added Custom encode to prevent email clients automatically adding <a> tag to URL's in form message.
+* Tweak - Edited Grid View text on admin panel to Product Card for consistency.
+* Tweak - Added description text to the top of each Pro Version yellow border section
+* Tweak - Tested for compatibility with WordPress version 3.8.1
+* Fix - Added missing close div tag for Custom form display when set to open on new page 
+* Fix - Email Inquiry sending duplicate emails on themes that have script that duplicate the click event
+
+= 1.0.8.5 - 2013/12/24 =
+* Tweak - a3rev Plugin Framework upgrade - all switch text show UPPERCASE
+* Tweak - Updated plugins wp-admin menu item vector image.
+
+= 1.0.8.4 - 2013/12/17 =
+* Fix - Update make_compatibility function with  isset( $args->slug ) and isset( $args['body']['request'] ) so that our plugin can work together with other developers plugin (eg Backupbuddy) that adds filter on the WordPress plugins_api (bad thing to do)
+* Fix - Plugins wp-admin menu icon display in all versions prior to WordPress 3.8.0. 
+
+= 1.0.8.3 - 2013/12/16 =
+* Feature - a3rev Plugin Framework admin interface upgraded to 100% Compatibility with WordPress v3.8.0 with backward compatibility.
+* Feature - a3rev framework 100% mobile and tablet responsive, portrait and landscape viewing.
+* Tweak - Upgraded dashboard switch and slider to Vector based display that shows when WordPress version 3.8.0 is activated.
+* Tweak - Upgraded all plugin .jpg icons and images to Vector based display for full compatibility with new WordPress version.
+* Tweak - Yellow sidebar on Quotes & Orders menus does not show in Mobile screens to optimize screen space.
+* Tweak - Tested 100% compatible with WP 3.8.0
+* Fix - Upgraded array_textareas type for Padding, Margin settings on the a3rev plugin framework
+
+= 1.0.8.2 - 2013/11/20 =
+* Fix - add filter to 'single_add_to_cart_text' for hide Add to Cart button for Child Products in Grouped Product when Hide Add to Cart Rule is activated.
+* Fix - add action to 'woocommerce_before_template_part' and 'woocommerce_after_template_part' for hide Child Products Quantity selector in Grouped Product when Hide Add to Cart is activated.
+* Fix - $args->slug depreciated in WordPress 3.7, replace with $request = unserialize( $args['body']['request'] ); $request->slug
+* Credit - Thanks to Marc Schwinges Underdog Productions South Africa for alerting us to the issue and wp-admin and ftp access to find and fix the bug. 
+
+= 1.0.8.1 - 2013/11/16 =
+* Tweak - Rework of the Rules & Roles admin menu so that Product Page Rules show at top.
+
+= 1.0.8 - 2013/11/16 =
+* Feature - New Product Card Rule Added - Read More Button / Text Link.
+* Feature - Added Button Border Corner Settings to the a3rev Plugin Framework. Square to Rounded Corner settings for each corner.
+* Tweak - Added new main Menu Item - Read More with Tabs - Settings | Button Style
+* Tweak - Read more text and font editor.
+* Tweak - 2 Read More on product card display options - On Hover over image or relative to the Add to Cart Button position on the product card.
+* Tweak - Show Read More feature as Button or Hyperlink Text when showing relative to Add to Card Button position on the product card.
+* Tweak - 3 position settings when showing Read More on hover over product card image - Top | Center | Bottom.
+* Tweak - Product Page Email & Cart Meta UI design upgrade. New tabs layout for ease of navigation.
+* Tweak - Added 'Read More' settings to product meta Email & cart.
+* Tweak - Moved the Email Inquiry Rules & Roles settings from Rules & Roles menu to Email Inquiry menu > Settings tab.
+* Tweak - Moved the show Email Inquiry feature on Product Cards settings from Button Style tab to settings tab.
+* Tweak - Changed Product Cards activation syntax - ON is enables, OFF is disabled.
+* Tweak - Added WPML capability for all new features.
+* Fix - Google fonts preview changes conflict.
+
+= 1.0.7.1 - 2013/11/06 =
+* Tweak - Stricter sanitization of Default Form Message input field. Only allow input of plain text with auto paragraph on line break.
+* Tweak - Added function .replace(/^\s+|\s+$/g, '') to check form for empty spaces for required fields Name, Email and Phone.
+* Tweak - Default Form Success Message Pop-up auto resizes to whatever the tall of the success message content is.
+* Tweak - Added class .email_inquiry_cb for Colorbox Pop-up tool content custom background display.
+
+= 1.0.7 - 2013/11/01 =
+* Feature - Default Form Style - added form background colour setting.
+* Feature - Default Form Style - added Product Title font editor.
+* Feature - Default Form Style - added Product URL font editor.
+* Feature - Default Form Style - added Email Subject font editor.
+* Feature - Default Form Style - added Form Input Fields border settings including corner styler.
+* Feature - Default Form Style - added Form Input Fields font editor.
+* Feature - Default Form Style - added Form Input Fields cell background colour settings
+* Tweak - Removed dynamic pop-up wide setting and replaced with static pop-up max wide.
+* Tweak - Pop-up tools wide under 520px shows 100% wide of the screen for mobiles in portrait or landscape. 
+* Tweak - Default Form breaks down for greatly enhanced display in tablets and mobiles.
+* Tweak - Default Form - added static 20px content padding that auto reduces to 5px in tablets and mobiles.
+* Tweak - Default From - vertical alignment of the text fields
+* Tweak - Default Form - changed the default form fonts on install from Bold to Normal.
+* Tweak - Default Form Success Message uses form custom background colour.
+* Tweak - Button Style - changed default button padding on install from 0px to 5px
+* Tweak - Button Style - added blue box help text and fixed a small typo.
+* Tweak - Rules & Roles - added blue box help text for Product Page Rule 'Show Email Inquiry'
+* Fix - Default form success message showing HTML tags with text.
+
+= 1.0.6 - 2013/10/29 =
+* Feature - Added full WPML compatibility. Includes strings for all static and dynamic text.
+
+= 1.0.5 - 2013/10/24 =
+* Feature - Major plugin upgrade. Full code rework. 
+* Feature - Upgraded the plugin to the newly developed a3rev admin Framework with app style interface.
+* Feature - Moved admin from WooCommerce settings tab onto its own Email Ultimate main menu item with sidebar sub menu.
+* Feature - Email Ultimate sub menus, Rules & Roles | Email Inquiry | Quotes Mode | Orders Mode
+* Feature - Email Inquiry menu broken up into tabs - Settings | Default Form | Custom Form | Button Style | Pop-Up Style
+* Feature - New admin UI features check boxes replaced by switches, some dropdowns replaced by sliders.
+* Feature - Replaced colour picker with new WordPress 3.6.0 colour picker.
+* Feature - Added choice of 350 Google fonts to the existing 17 websafe fonts in all new single row font editor.
+* Feature - New Border / Button shadow features. Create shadow external or internal, set wide of shadow.
+* Feature - New on page instant previews for Fonts editor, create border and shadow style. 
+* Feature - Added intuitive triggers for admin panel settings. When selected corresponding feature settings appear.
+* Feature - Added Colorbox pop-up tool as an option to Fancybox pop-up tool.
+* Feature - Added Default Form Title font editor.
+* Feature - Added Fancybox and Colorbox pop-up size, style and transition settings.
+* Feature - Added House Keeping function to settings. Clean up on Deletion. Option - If ever deleted (not deactivate) this plugin it will completely remove all tables and data it has created.	
+* Tweak - Rules & Roles - Activate any Rule for logged in user Role by adding the Role to the Rule.
+* Tweak - Rules and Roles - incorporate help message under each Rules Roles. Show when the Rule is turned on.
+
+= 1.0.4 - 2013/08/09 =
+* Feature - After making the new WooCommerce Quick View plugin we are able to use the pop-up code that we wrote for that plugins pop-up to be able use it to add the Open 3RD Party form by pop-up feature. 
+* Feature - 3RD Party Contact Form open in pop-up feature applies to Product Page and Grid View.
+* Feature - 3RD Party Contact Form UI. Added custom template for 3rd contact form. The form always shows well in the pop-up. Automatically uses the site content background for the form background. Looks great.
+* Feature - 3RD Party Contact Form open 'on new page' new option - Open page in the same window default setting is open page in new window).  
+* Feature - Default Contact Form new open option on Product pages - Open default contact form 'on page'. Use ajax to show and hide the contact form on click. Makes for a very slick presentation. 
+* Feature - Default Contact Form new options for 'Email Pop-up Font Styling'. Use WYSIWYG settings to set the default pop-ups Font type (choose from 17 web safe fonts), size, style and colour.
+* Tweak - Tested for full compatibility with WordPress v3.6.0
+* Tweak - Tested for full compatibility with new Gravity Forms v1.7.7
+* Fix - Fixed script validate email for default contact form. Old script conflicted with WordPress 3.6.0 jQuery 1.10.2. Conflict caused the popup tools to break. 
+* Fix - Added box-sizing:content-box class attribute for compatibility with new WordPress Twenty Thirteen default theme.
+
+= 1.0.3 - 2013/07/24 =
+* Fix - Fatal Error on install being caused by Contact Form 7 &$contact_form updated to $contact_form to fix. 
+* Credit - Thanks to Andrew Lang for the access to his site to help find and squash this tiny but troublesome bug.
+
+= 1.0.2 - 2013/07/01 =
+* Fix - Longer product names pushed below product image in default email po-up. In product name + product URL container replaced display:inline-block; with display:block; and conditionals. 
+
+= 1.0.1 - 2013/06/28 =
+* Twaek - Greatly improved the display of 3RD Party Contact forms - open on new page.
+* Tweak - Removed custom email form page template and now use theme page template for open 3RD party plugin contact form on New page
+* Tweak - Show Product feature Image, Product name, Product URL on the contact form New page.
+* Tweak - Show Product Information including Product Image, Product Name, Product URL on default pop-up form.
+* Tweak - Changed the Gravity form default Field name from Email Inquiry to Product Email Inquiry
+* Fix - Replaced hardcode iso-8859-1 charset to dynamic get_option('blog_charset')
+
+= 1.0.0 - 2013/06/22 =
+* First working release 

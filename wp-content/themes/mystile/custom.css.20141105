@@ -1,0 +1,357 @@
+/* 
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it 
+is easier to update the theme. Simply copy an existing style 
+from style.css to this file, and modify it to your liking. */
+
+
+/* 
+GLOBAL STYLES
+----------------
+Add styles beneath this line that you want to be applied across your entire site */
+
+
+/* 
+DESKTOP STYLES
+-----------------
+Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
+body {
+	/*padding: 0 3.631em;
+	background-color: #BBBBBB;
+	background: url(images/footerbg.jpg) no-repeat center bottom, url(images/bodybg4.jpg) 50% 7px repeat-x #ECECEC;
+	*/
+}
+body.home {
+	/*background: url(images/footerbg.jpg) no-repeat center bottom, url(images/bodybg3.jpg) 50% 7px repeat-x, url(images/mainbodybg.jpg);
+	*/
+}
+#searchform .screen-reader-text {
+	display: none;
+}
+#searchform {
+	margin-top: 6px;
+	float: right;
+}
+#searchform ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#searchform :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#searchform ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#searchform :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+    font-size: 11px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+#searchform .input-text {
+	border: none;
+	height: 25px;
+	border-radius: 16px;
+	background: #000 url(images/searchbg.png) no-repeat 6px 7px;
+	width: 150px;
+	margin-right: 10px;
+	color: #fff;
+	padding-left: 25px;
+}
+#searchform #searchsubmit {
+	display: none;
+}
+#footer {
+	padding: 34px 0 13px 0;
+}
+#footer, #footer a {
+	color: #333333;
+	font-size: 11px;
+	font-weight: 400;
+}
+#footer a {
+	padding: 0 3px;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+#footer div {
+	display: inline-block;
+}
+#footer li {
+	display: inline-block;
+}
+#footer li:last-child > span {
+	display: none;
+}
+#footer .paymentmethods {
+	margin-left: 20px;
+}
+#footer .StudioEleven {
+	float: right;
+	margin-right: 10px;
+}
+#footer .StudioEleven a {
+	display: inline-block;
+	text-indent: -9999px;
+	background: url(images/studioeleven.png);
+	width: 76px;
+	height: 16px;
+	margin-left: 2px;
+}
+#footer ul {
+	margin-bottom: 7px;
+}
+#footer-widgets {
+	padding-top: 0;
+	padding-bottom: 3px;
+}
+#footer-widgets .block { 
+	background: url(images/whitebg.png) top right no-repeat;
+	color: #fff;
+	padding-top: 10px;
+	height: 220px;
+}
+#footer-widgets .block .textwidget { 
+	font-size: 12px;
+	line-height: 20px;
+}
+#footer-widgets .widget {
+	padding-right: 30px;
+}
+#footer-widgets .block:last-of-type {
+	background: none;
+}
+#footer-widgets .textwidget form {
+	margin: 10px 0;
+} 
+#footer-widgets .textwidget input[type="text"] {
+	width: 175px;
+	height: 20px;
+	margin: 3px 0;
+	border: none;
+	padding: 4px 0 4px 8px;
+}
+#footer-widgets .textwidget input[type="submit"] {
+	display: block;
+	text-indent: -9999px;
+	background: url(images/signupnow.png);
+	width: 119px;
+	height: 25px;
+	border: none;
+	margin-top: 5px;
+}
+.widget h3 {
+	font-weight: 700;
+}
+ul.products li.product h3 {
+	min-height: 20px;
+}
+.specials {
+	display: inline-block;
+	background: url(images/hrbg2.png);
+	display: inline-block;
+	width: 495px;
+	float: right;
+}
+.specials ul.products {
+	margin-bottom: 10px;
+}
+.specials ul.products li.product {
+	width: 100%;
+	margin-bottom: 0;
+	background: none;
+}
+.shortdescription {
+	display: none;
+}
+.specials .shortdescription {
+	float: right;
+	width: 285px;
+	text-align: left;
+	margin-top: 40px;
+	padding-right: 15px;
+	font-size: 13px;
+	color: #1F1F1F;
+	display: inline-block;
+}
+.specials ul li a:first-of-type {
+	display: inline-block;
+	float: left;
+	width: 195px;
+}
+.specials ul li a:nth-of-type(2) {
+	display: block;
+	text-indent: -9999px;
+	background: url(images/findoutmore.png) no-repeat;
+	width: 125px;
+	height: 25px;
+	margin-top: 0;
+}
+.specials ul.products li.product h3 { 
+	display: inline-block;
+    font-size: 19px;
+    line-height: 20px;
+    margin-left: 101px;
+    margin-top: -185px;
+    position: absolute;
+}
+.specials ul.products li.product .price {
+	display: none;
+}
+.specials h2 {
+	margin: 10px;
+	background: #F0F500;
+	padding: 3px 7px 0;
+	font-weight: 700;
+}
+#breadcrumbs {
+	margin: 5px 0;
+}
+.post-type-archive-product h1.page-title {
+	font-weight: 700;
+}
+.single-product .related ul.products li.product, .post-type-archive-product ul.products li.product {
+	background: none;
+}
+.single-product .related ul.products li.product .buttondetails, .post-type-archive-product ul.products li.product .buttondetails {
+	display: none;
+}
+.single-product .related ul.products li.product, .post-type-archive-product ul.products li.product {
+	width: 238px;
+}
+.single-product .related ul.products li.product img, .post-type-archive-product ul.products li.product img {
+	width: 215px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.single-product .related ul.products li.product h3, .single-product .related ul.products li.product .price,
+.post-type-archive-product ul.products li.product h3, .post-type-archive-product ul.products li.product .price {
+	text-align: center;
+	font-size: 18px;
+	color: #444444;
+}
+.post-type-archive-product .woocommerce-ordering select {
+	margin-right: 10px;
+}
+.single-product .related ul.products li.product .price, .post-type-archive-product ul.products li.product .price {
+	font-size: 15px;
+	line-height: 15px;
+	color: #444444;
+}
+#footer-widgets li a { color: #fff; font-weight: normal; }
+#footer-widgets li a:hover { font-weight: bold; }
+#footer-widgets ul { list-style: square inside none; }
+.geomax { background-image: url('http://buildmax.co.nz/wp-content/uploads/2013/12/geomax-sml2.png'); background-repeat: no-repeat; height: 16px; padding-left: 80px; }
+
+.buttondetails {
+    background: url("http://buildmax.co.nz/wp-content/themes/mystile/images/details.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    float: right;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-right: 7px;
+    margin-top: 5px;
+    text-indent: -9999px;
+    width: 89px;
+}
+
+.nivo-caption h1 {
+    color: #FFFFFF;
+    font-family: 'Ruda',sans-serif;
+    font-size: 41px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.nivo-caption {
+    -moz-box-sizing: border-box;
+    background: Transparent !important;
+    bottom: 0;
+    color: #FFFFFF;
+    display: none;
+    left: 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 5px 10px 18px !important;
+    position: absolute;
+    width: 45% !important;
+    z-index: 8;
+}
+
+.nivo-caption a {
+    background-color: #ED7000;
+    border: 1px solid #FFA500 !important;
+    border-radius: 6px;
+    color: #FFFFFF !important;
+    margin-top: 20px;
+    opacity: 1 !important;
+    padding: 8px;
+    text-shadow: 1px 1px 0 #000000;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.nivo-caption a:hover { background-color: #F5DE04; border: 1px solid #ED7000; }
+
+.custom-phone {
+    border: 0 solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Ruda',sans-serif;
+    font-size: 27px;
+    height: 35px;
+    left: 50%;
+    line-height: 26px;
+    margin-left: 75px;
+    margin-top: 72px;
+    position: absolute;
+    text-align: right;
+    text-shadow: 1px 1px 0 #000000;
+    width: 200px;
+}
+.wc_ei_read_more_button_container .wc_ei_read_more_button_type, .wc_ei_read_more_button_container .wc_ei_read_more_button_type {
+position: relative !important;
+cursor: pointer;
+display: inline-block !important;
+line-height: 1 !important;
+padding: 7px 8px !important;
+margin: 0;
+background-color: #EE2B2B !important;
+background: -webkit-gradient( linear, left top, left bottom, color-stop(.2, #FBCACA), color-stop(1, #EE2B2B) ) !important;
+background: -moz-linear-gradient( center top, #FBCACA 20%, #EE2B2B 100% ) !important;
+border: 1px solid #EE2B2B !important;
+border-radius: 3px 3px 3px 3px !important;
+-moz-border-radius: 3px 3px 3px 3px !important;
+-webkit-border-radius: 3px 3px 3px 3px !important;
+box-shadow: none !important;
+-moz-box-shadow: none !important;
+-webkit-box-shadow: none !important;
+font: bold 12px Arial !important;
+color: #FFFFFF !important;
+text-align: center !important;
+text-shadow: 0 -1px 0 hsla(0,0%,0%,.3);
+text-decoration: none !important;
+display: none !immportant;
+}
+
+@media only screen and (min-width: 768px) {
+	/* Desktop styles go here */
+}
